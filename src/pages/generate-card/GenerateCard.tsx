@@ -22,7 +22,7 @@ export default function GenerateCard() {
   const canvasRef = React.useRef<HTMLCanvasElement | null>(null)
   const navigate = useNavigate()
   const location = useLocation()
-  const name = location.state?.name || 'Tuyen'
+  const name = location.state?.name
   const cardRef = React.useRef<HTMLDivElement | null>(null)
 
   React.useEffect(() => {
