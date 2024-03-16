@@ -62,7 +62,7 @@
   position: absolute;
   z-index: 1;
   inset: 0;
-  background-color: #399953;
+  background-color: var(--color-red);
   background-repeat: no-repeat;
   background-size:
     50% 50%,
@@ -72,8 +72,9 @@
     100% 0,
     100% 100%,
     0 100%;
-  background-image: linear-gradient(#399953, #399953), linear-gradient(#fbb300, #fbb300),
-    linear-gradient(#d53e33, #d53e33), linear-gradient(#377af5, #377af5);
+  background-image: linear-gradient(var(--color-red), var(--color-red)),
+    linear-gradient(var(--color-yellow), var(--color-yellow)), linear-gradient(var(--color-green), var(--color-green)),
+    linear-gradient(var(--color-blue), var(--color-blue));
   border-radius: 1.25rem;
 }
 .card_wrapper::after {
