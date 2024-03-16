@@ -42,6 +42,7 @@ export default function GenerateCard() {
       return
     }
     const img = document.createElement('img')
+    img.crossOrigin = 'anonymous' // fix ios
     img.onload = () => {
       ctx.drawImage(img, 0, 0, 1080, 1920)
       ctx.font = 'bold 65px Google Sans'
