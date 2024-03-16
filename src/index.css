@@ -1,0 +1,26 @@
+@font-face {
+  font-family: 'Google Sans';
+  src: url('assets/fonts/GoogleSans-Regular.ttf') format('truetype');
+}
+
+:root {
+  --color-blue: #4285f4;
+  --color-green: #34a853;
+  --color-red: #ea4335;
+  --color-yellow: #fbbc04;
+  --color-white: #fff;
+  --color-black: #000;
+  --shadow-form: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  --shadow-input: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Google Sans', sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
