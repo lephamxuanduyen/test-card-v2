@@ -1,5 +1,5 @@
 .wrapper {
-  min-height: 100vh;
+  height: 100%;
   background-image: url(/src/assets/images/bg-trim.svg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -9,6 +9,9 @@
   flex-direction: column;
   justify-content: center;
   gap: 2rem;
+}
+.container {
+  height: 100%;
 }
 .logo {
   position: absolute;

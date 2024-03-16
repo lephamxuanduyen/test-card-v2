@@ -15,6 +15,7 @@ export interface HomeProps {}
 export default function Home() {
   useEffect(() => {
     document.body.style.overflow = 'auto'
+    document.body.style.height = 'auto'
   }, [])
   return (
     <div className={styles.home_wrapper}>
