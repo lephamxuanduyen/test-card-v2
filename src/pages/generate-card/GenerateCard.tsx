@@ -44,7 +44,7 @@ export default function GenerateCard() {
     const img = document.createElement('img')
     img.onload = () => {
       ctx.drawImage(img, 0, 0, 1080, 1920)
-      ctx.font = '500 65px Google Sans'
+      ctx.font = '600 65px Google Sans'
       ctx.textAlign = 'left'
       ctx.fillText(name, 120, 610)
     }

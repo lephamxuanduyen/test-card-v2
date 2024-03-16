@@ -1,8 +1,3 @@
-@font-face {
-  font-family: 'Google Sans';
-  src: url('assets/fonts/GoogleSans-Regular.ttf') format('truetype');
-}
-
 :root {
   --color-blue: #4285f4;
   --color-green: #34a853;
@@ -18,7 +13,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Google Sans', sans-serif;
+  font-family:
+    Google Sans,
+    sans-serif;
 }
 
 img {
