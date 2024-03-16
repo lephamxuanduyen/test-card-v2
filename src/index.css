@@ -18,14 +18,6 @@
     sans-serif;
 }
 
-body {
-  height: 100dvh;
-}
-
-#root {
-  height: 100%;
-}
-
 img {
   max-width: 100%;
 }

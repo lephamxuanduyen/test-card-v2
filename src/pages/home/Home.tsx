@@ -8,14 +8,10 @@ import styles from './home.module.css'
 import 'swiper/css'
 import 'swiper/css/pagination'
 import 'swiper/css/navigation'
-import { useEffect } from 'react'
 
 export interface HomeProps {}
 
 export default function Home() {
-  useEffect(() => {
-    document.body.style.height = 'auto'
-  }, [])
   return (
     <div className={styles.home_wrapper}>
       <div className={styles.booth_wrapper}>
