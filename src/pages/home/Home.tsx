@@ -47,7 +47,7 @@ export default function Home() {
                 slidesPerView: 1
               },
               480: {
-                slidesPerView: 3
+                slidesPerView: 2
               },
               768: {
                 slidesPerView: 4
@@ -104,7 +104,7 @@ export default function Home() {
                 slidesPerView: 1
               },
               480: {
-                slidesPerView: 3
+                slidesPerView: 2
               },
               768: {
                 slidesPerView: 4
