@@ -1,8 +1,5 @@
 .wrapper {
-  background-image: url(/src/assets/images/bg-trim.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-color: var(--color-white);
   position: relative;
   display: flex;
   flex-direction: column;
@@ -25,6 +22,9 @@
   right: 0;
   display: flex;
   align-items: flex-start;
+}
+.bg_icon img {
+  width: 3rem;
 }
 
 @media screen and (max-width: 1080px) {
