@@ -44,7 +44,7 @@ export default function GenerateCard() {
     const img = document.createElement('img')
     img.crossOrigin = 'anonymous' // fix ios
     img.onload = () => {
-      ctx.drawImage(img, 0, 0, 400, 700)
+      ctx.drawImage(img, 0, 0, 1080, 1920)
       ctx.font = 'bold 65px Google Sans'
       ctx.textAlign = 'left'
       ctx.fillText(name, 120, 610)
@@ -82,7 +82,7 @@ export default function GenerateCard() {
   }
   return (
     <div className={styles.page_container}>
-      <canvas height={700} width={400} ref={canvasRef} className={styles.myCanvas} />
+      <canvas height={1920} width={1080} ref={canvasRef} className={styles.myCanvas} />
       <div className={styles.actions}>
         Thông tin đã được ghi lại ✨
         <img src={cup} alt='cup' />
