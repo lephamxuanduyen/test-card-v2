@@ -3,21 +3,34 @@
   flex-direction: column;
   margin-top: 2rem;
   gap: 2rem;
+  min-height: calc(100vh - 2rem);
 }
 
 .booth_wrapper {
-  height: 35vh;
+  margin-top: 1rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  place-content: end;
+  place-content: center;
   place-items: center;
+  gap: 20rem;
 }
 .booth {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.booth_body {
   display: flex;
   justify-content: center;
   align-items: flex-end;
   width: 50%;
   height: 100%;
+}
+
+.QR_container {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
 }
 
 .QR {
@@ -31,34 +44,47 @@
   font-size: 1.5rem;
   font-weight: bold;
 }
+.QR img {
+  width: 90%;
+}
 
 .slider_wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
+  gap: 1.5rem;
   overflow-x: hidden;
-  min-height: 55vh;
+  flex: 1;
 }
 .slider_container {
   display: flex;
   flex-direction: column;
   width: 100%;
   gap: 2rem;
-  transform: translateX(100px);
+  transform: translateX(80px);
+  padding: 0 1rem;
+}
+
+.img_slider {
+  width: 100%;
 }
 
 @media screen and (max-width: 1100px) {
   .home_wrapper {
-    margin-top: 16rem;
+    margin-top: 6rem;
   }
   .booth_wrapper {
     grid-template-columns: repeat(1, 1fr);
     gap: 4rem;
   }
+  .booth,
+  .QR_container {
+    justify-content: center;
+  }
   .slider_container {
     transform: translateX(0) !important;
     text-align: center;
+    padding: 0 1rem;
   }
 }

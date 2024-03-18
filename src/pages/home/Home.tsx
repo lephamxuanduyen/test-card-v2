@@ -16,13 +16,17 @@ export default function Home() {
     <div className={styles.home_wrapper}>
       <div className={styles.booth_wrapper}>
         <div className={styles.booth}>
-          <img src={grass_left} alt='grass-left' />
-          <img src={booth} alt='booth' />
-          <img src={grass_right} alt='grass-right' />
+          <div className={styles.booth_body}>
+            <img src={grass_left} alt='grass-left' />
+            <img src={booth} alt='booth' />
+            <img src={grass_right} alt='grass-right' />
+          </div>
         </div>
-        <div className={styles.QR}>
-          <h3>Quét mã QR ở đây này!</h3>
-          <img src={QR_form} alt='QR-form' />
+        <div className={styles.QR_container}>
+          <div className={styles.QR}>
+            <h3>Quét mã QR ở đây này!</h3>
+            <img src={QR_form} alt='QR-form' />
+          </div>
         </div>
       </div>
       <div className={styles.slider_wrapper}>
@@ -43,43 +47,46 @@ export default function Home() {
                 slidesPerView: 1
               },
               480: {
-                slidesPerView: 1
-              },
-              768: {
                 slidesPerView: 2
               },
+              768: {
+                slidesPerView: 4
+              },
               992: {
-                slidesPerView: 3
+                slidesPerView: 5
               },
               1280: {
-                slidesPerView: 5
+                slidesPerView: 6
               }
             }}
           >
             <SwiperSlide>
-              <img src={slider} alt='slide1' />
+              <img src={slider} className={styles.img_slider} alt='slide1' />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={slider} alt='slide1' />
+              <img src={slider} className={styles.img_slider} alt='slide1' />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={slider} alt='slide1' />
+              <img src={slider} className={styles.img_slider} alt='slide1' />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={slider} alt='slide1' />
+              <img src={slider} className={styles.img_slider} alt='slide1' />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={slider} alt='slide1' />
+              <img src={slider} className={styles.img_slider} alt='slide1' />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={slider} alt='slide1' />
+              <img src={slider} className={styles.img_slider} alt='slide1' />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={slider} className={styles.img_slider} alt='slide1' />
             </SwiperSlide>
           </Swiper>
         </div>
         <div
           className={styles.slider_container}
           style={{
-            transform: 'translateX(-100px)'
+            transform: 'translateX(-80px)'
           }}
         >
           <Swiper
@@ -97,36 +104,39 @@ export default function Home() {
                 slidesPerView: 1
               },
               480: {
-                slidesPerView: 1
-              },
-              768: {
                 slidesPerView: 2
               },
+              768: {
+                slidesPerView: 4
+              },
               992: {
-                slidesPerView: 3
+                slidesPerView: 5
               },
               1280: {
-                slidesPerView: 5
+                slidesPerView: 6
               }
             }}
           >
             <SwiperSlide>
-              <img src={slider} alt='slide1' />
+              <img src={slider} className={styles.img_slider} alt='slide1' />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={slider} alt='slide1' />
+              <img src={slider} className={styles.img_slider} alt='slide1' />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={slider} alt='slide1' />
+              <img src={slider} className={styles.img_slider} alt='slide1' />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={slider} alt='slide1' />
+              <img src={slider} className={styles.img_slider} alt='slide1' />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={slider} alt='slide1' />
+              <img src={slider} className={styles.img_slider} alt='slide1' />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={slider} alt='slide1' />
+              <img src={slider} className={styles.img_slider} alt='slide1' />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={slider} className={styles.img_slider} alt='slide1' />
             </SwiperSlide>
           </Swiper>
         </div>
