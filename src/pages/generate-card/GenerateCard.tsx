@@ -59,7 +59,7 @@ export default function GenerateCard() {
     if (!canvas) {
       return
     }
-    link.href = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream")
+    link.href = canvas.toDataURL()
     link.click()
   }
 
