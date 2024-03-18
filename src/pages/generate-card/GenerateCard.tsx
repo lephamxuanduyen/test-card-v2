@@ -41,16 +41,13 @@ export default function GenerateCard() {
     if (!ctx) {
       return
     }
-    const fBold = new FontFace('Google Sans', 'url(https://fonts.googleapis.com/css2?family=Google+Sans:wght@700&display=swap)')
     const img = document.createElement('img')
     img.crossOrigin = 'anonymous' // fix ios
     img.onload = () => {
       ctx.drawImage(img, 0, 0, 1080, 1920)
-      fBold.load().then(() => {
-        ctx.font = '700 65px Google Sans'
-        ctx.textAlign = 'left'
-        ctx.fillText(name, 120, 610)
-      })
+      ctx.font = '700 65px Google Sans'
+      ctx.textAlign = 'left'
+      ctx.fillText(name, 120, 610)
     }
     img.src = cardBg
   }
@@ -62,7 +59,7 @@ export default function GenerateCard() {
     if (!canvas) {
       return
     }
-    link.href = canvas.toDataURL()
+    link.href = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream")
     link.click()
   }
 
