@@ -51,12 +51,14 @@ export default function GenerateCard() {
     img.crossOrigin = 'anonymous' // fix ios
     img.onload = () => {
       ctx.drawImage(img, 0, 0, 1080, 1920)
-      ctx.font = '600 65px Google Sans'
+      if (isChrome){
+        ctx.font = '800 65px Google Sans'
+        ctx.strokeText(name, 120, 610)
+      }else{
+        ctx.font = '500 65px Google Sans'
+      }
       ctx.textAlign = 'left'
       ctx.fillText(name, 120, 610)
-      if (isChrome){
-        ctx.strokeText(name, 120, 610)
-      }
     }
     img.src = cardBg
   }
@@ -71,7 +73,6 @@ export default function GenerateCard() {
     link.href = canvas.toDataURL()
     link.click()
   }
-
   // const htmlToImageConvert = () => {
   //   if (cardRef.current === null) return
   //   toPng(cardRef.current, { cacheBust: false })
