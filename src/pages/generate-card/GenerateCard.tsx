@@ -24,6 +24,12 @@ export default function GenerateCard() {
   const location = useLocation()
   const name = location.state?.name
   const cardRef = React.useRef<HTMLDivElement | null>(null)
+  const isChrome = checkIsChrome()
+  
+  function checkIsChrome(): boolean {
+    const userAgent = navigator.userAgent
+    return userAgent.indexOf("Chrome") >= 0
+  }
 
   React.useEffect(() => {
     if (!name) {
@@ -48,7 +54,9 @@ export default function GenerateCard() {
       ctx.font = '600 65px Google Sans'
       ctx.textAlign = 'left'
       ctx.fillText(name, 120, 610)
-      ctx.strokeText(name, 120, 610)
+      if (isChrome){
+        ctx.strokeText(name, 120, 610)
+      }
     }
     img.src = cardBg
   }
