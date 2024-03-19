@@ -52,7 +52,7 @@ export default function GenerateCard() {
     img.onload = () => {
       ctx.drawImage(img, 0, 0, 1080, 1920)
       if (isChrome){
-        ctx.font = '800 65px Google Sans'
+        ctx.font = '600 65px Google Sans'
       }else{
         ctx.font = '500 65px Google Sans'
         ctx.strokeText(name, 120, 610)
