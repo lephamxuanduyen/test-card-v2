@@ -48,6 +48,7 @@ export default function GenerateCard() {
       ctx.font = '600 65px Google Sans'
       ctx.textAlign = 'left'
       ctx.fillText(name, 120, 610)
+      ctx.strokeText(name, 120, 610)
     }
     img.src = cardBg
   }
