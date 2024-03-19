@@ -53,9 +53,9 @@ export default function GenerateCard() {
       ctx.drawImage(img, 0, 0, 1080, 1920)
       if (isChrome){
         ctx.font = '800 65px Google Sans'
-        ctx.strokeText(name, 120, 610)
       }else{
         ctx.font = '500 65px Google Sans'
+        ctx.strokeText(name, 120, 610)
       }
       ctx.textAlign = 'left'
       ctx.fillText(name, 120, 610)
